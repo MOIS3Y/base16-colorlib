@@ -533,8 +533,8 @@ melange = {
     "base0F": "#8E733F",
 }
 
-monekai = {
-    "scheme": "monekai",
+monokai = {
+    "scheme": "monokai",
     "author": "https://monokai.pro",
     "base00": "#272822",
     "base01": "#383830",
@@ -848,3 +848,4 @@ yoru = {
     "base0E": "#c58cec",
     "base0F": "#e8646a",
 }
+
