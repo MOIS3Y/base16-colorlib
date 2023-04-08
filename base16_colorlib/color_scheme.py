@@ -52,7 +52,7 @@ Now available:
     gruvbox_light,
     kanagawa,
     melange,
-    monekai,
+    monokai,
     monochrome,
     mountain,
     nord,
@@ -73,7 +73,7 @@ Styling Guidelines:
 https://github.com/chriskempson/base16/blob/main/styling.md
 #...
 base00 - Default Background
-base01 - Lighter Background (Used for status bars, line number and folding marks)
+base01 - Lighter Background (Used for status bars, line num and folding marks)
 base02 - Selection Background
 base03 - Comments, Invisibles, Line Highlighting
 base04 - Dark Foreground (Used for status bars)
@@ -104,7 +104,7 @@ software.
 __author__ = "MOIS3Y"
 __credits__ = ["Stepan Zhukovsky"]
 __license__ = "GPL v3.0"
-__version__ = "0.0.1"
+__version__ = "0.1.0"
 __maintainer__ = "Stepan Zhukovsky"
 __email__ = "stepan@zhukovsky.me"
 __status__ = "Production"
@@ -116,9 +116,9 @@ __status__ = "Production"
 aquarium = {
     "scheme": "aquarium",
     "author": "https://github.com/FrenzyExists/aquarium-vim",
-    "base00": "#20202A",
+    "base00": "#20202a",
     "base01": "#2c2e3e",
-    "base02": "#3D4059",
+    "base02": "#3d4059",
     "base03": "#313449",
     "base04": "#63718b",
     "base05": "#bac0cb",
@@ -131,7 +131,7 @@ aquarium = {
     "base0C": "#b8dceb",
     "base0D": "#a3b8ef",
     "base0E": "#f6bbe7",
-    "base0F": "#eAc1c1",
+    "base0F": "#eac1c1",
 }
 
 ashes = {
@@ -158,22 +158,22 @@ ashes = {
 ayu_dark = {
     "scheme": "ayu_dark",
     "author": "https://github.com/ayu-theme/ayu-vim",
-    "base00": "#0B0E14",
+    "base00": "#0b0e14",
     "base01": "#1c1f25",
     "base02": "#24272d",
     "base03": "#2b2e34",
     "base04": "#33363c",
     "base05": "#c9c7be",
-    "base06": "#E6E1CF",
-    "base07": "#D9D7CE",
+    "base06": "#e6e1cf",
+    "base07": "#d9d7ce",
     "base08": "#c9c7be",
-    "base09": "#FFEE99",
+    "base09": "#ffee99",
     "base0A": "#56c3f9",
-    "base0B": "#AAD84C",
-    "base0C": "#FFB454",
-    "base0D": "#F07174",
-    "base0E": "#FFB454",
-    "base0F": "#CBA6F7",
+    "base0B": "#aad84c",
+    "base0C": "#ffb454",
+    "base0D": "#f07174",
+    "base0E": "#ffb454",
+    "base0F": "#cba6f7",
 }
 
 ayu_light = {
@@ -184,17 +184,17 @@ ayu_light = {
     "base02": "#eeeeee",
     "base03": "#dfdfdf",
     "base04": "#d2d2d2",
-    "base05": "#5C6166",
+    "base05": "#5c6166",
     "base06": "#52575c",
     "base07": "#484d52",
-    "base08": "#F07171",
-    "base09": "#A37ACC",
-    "base0A": "#399EE6",
-    "base0B": "#86B300",
-    "base0C": "#4CBF99",
-    "base0D": "#55B4D4",
-    "base0E": "#FA8D3E",
-    "base0F": "#F2AE49",
+    "base08": "#f07171",
+    "base09": "#a37acc",
+    "base0A": "#399ee6",
+    "base0B": "#86b300",
+    "base0C": "#4cbf99",
+    "base0D": "#55b4d4",
+    "base0E": "#fa8d3e",
+    "base0F": "#f2ae49",
 }
 
 bearded_arc = {
@@ -206,16 +206,16 @@ bearded_arc = {
     "base03": "#444c5b",
     "base04": "#a1adb7",
     "base05": "#c3cfd9",
-    "base06": "#ABB7C1",
+    "base06": "#abb7c1",
     "base07": "#08bdba",
-    "base08": "#FF738A",
-    "base09": "#FF955C",
-    "base0A": "#EACD61",
-    "base0B": "#3CEC85",
+    "base08": "#ff738a",
+    "base09": "#ff955c",
+    "base0A": "#eacd61",
+    "base0B": "#3cec85",
     "base0C": "#77aed7",
-    "base0D": "#69C3FF",
-    "base0E": "#22ECDB",
-    "base0F": "#FF738A",
+    "base0D": "#69c3ff",
+    "base0E": "#22ecdb",
+    "base0F": "#ff738a",
 }
 
 blossom_light = {
@@ -242,85 +242,85 @@ blossom_light = {
 catppuccin_latte = {
     "scheme": "catppuccin_latte",
     "author": "https://github.com/catppuccin/catppuccin",
-    "base00": "#eff1f5", # base
-    "base01": "#e6e9ef", # mantle
-    "base02": "#ccd0da", # surface0
-    "base03": "#bcc0cc", # surface1
-    "base04": "#acb0be", # surface2
-    "base05": "#4c4f69", # text
-    "base06": "#dc8a78", # rosewater
-    "base07": "#7287fd", # lavender
-    "base08": "#d20f39", # red
-    "base09": "#fe640b", # peach
-    "base0A": "#df8e1d", # yellow
-    "base0B": "#40a02b", # green
-    "base0C": "#179299", # teal
-    "base0D": "#1e66f5", # blue
-    "base0E": "#8839ef", # mauve
-    "base0F": "#dd7878", # flamingo
+    "base00": "#eff1f5",  # base
+    "base01": "#e6e9ef",  # mantle
+    "base02": "#ccd0da",  # surface0
+    "base03": "#bcc0cc",  # surface1
+    "base04": "#acb0be",  # surface2
+    "base05": "#4c4f69",  # text
+    "base06": "#dc8a78",  # rosewater
+    "base07": "#7287fd",  # lavender
+    "base08": "#d20f39",  # red
+    "base09": "#fe640b",  # peach
+    "base0A": "#df8e1d",  # yellow
+    "base0B": "#40a02b",  # green
+    "base0C": "#179299",  # teal
+    "base0D": "#1e66f5",  # blue
+    "base0E": "#8839ef",  # mauve
+    "base0F": "#dd7878",  # flamingo
 }
 
 catppuccin_frappe = {
     "scheme": "catppuccin_frappe",
     "author": "https://github.com/catppuccin/catppuccin",
-    "base00": "#303446", # base
-    "base01": "#292c3c", # mantle
-    "base02": "#414559", # surface0
-    "base03": "#51576d", # surface1
-    "base04": "#626880", # surface2
-    "base05": "#c6d0f5", # text
-    "base06": "#f2d5cf", # rosewater
-    "base07": "#babbf1", # lavender
-    "base08": "#e78284", # red
-    "base09": "#ef9f76", # peach
-    "base0A": "#e5c890", # yellow
-    "base0B": "#a6d189", # green
-    "base0C": "#81c8be", # teal
-    "base0D": "#8caaee", # blue
-    "base0E": "#ca9ee6", # mauve
-    "base0F": "#eebebe", # flamingo
+    "base00": "#303446",  # base
+    "base01": "#292c3c",  # mantle
+    "base02": "#414559",  # surface0
+    "base03": "#51576d",  # surface1
+    "base04": "#626880",  # surface2
+    "base05": "#c6d0f5",  # text
+    "base06": "#f2d5cf",  # rosewater
+    "base07": "#babbf1",  # lavender
+    "base08": "#e78284",  # red
+    "base09": "#ef9f76",  # peach
+    "base0A": "#e5c890",  # yellow
+    "base0B": "#a6d189",  # green
+    "base0C": "#81c8be",  # teal
+    "base0D": "#8caaee",  # blue
+    "base0E": "#ca9ee6",  # mauve
+    "base0F": "#eebebe",  # flamingo
 }
 
 catppuccin_macchiato = {
     "scheme": "catppuccin_macchiato",
     "author": "https://github.com/catppuccin/catppuccin",
-    "base00": "#24273a", # base
-    "base01": "#1e2030", # mantle
-    "base02": "#363a4f", # surface0
-    "base03": "#494d64", # surface1
-    "base04": "#5b6078", # surface2
-    "base05": "#cad3f5", # text
-    "base06": "#f4dbd6", # rosewater
-    "base07": "#b7bdf8", # lavender
-    "base08": "#ed8796", # red
-    "base09": "#f5a97f", # peach
-    "base0A": "#eed49f", # yellow
-    "base0B": "#a6da95", # green
-    "base0C": "#8bd5ca", # teal
-    "base0D": "#8aadf4", # blue
-    "base0E": "#c6a0f6", # mauve
-    "base0F": "#f0c6c6", # flamingo
+    "base00": "#24273a",  # base
+    "base01": "#1e2030",  # mantle
+    "base02": "#363a4f",  # surface0
+    "base03": "#494d64",  # surface1
+    "base04": "#5b6078",  # surface2
+    "base05": "#cad3f5",  # text
+    "base06": "#f4dbd6",  # rosewater
+    "base07": "#b7bdf8",  # lavender
+    "base08": "#ed8796",  # red
+    "base09": "#f5a97f",  # peach
+    "base0A": "#eed49f",  # yellow
+    "base0B": "#a6da95",  # green
+    "base0C": "#8bd5ca",  # teal
+    "base0D": "#8aadf4",  # blue
+    "base0E": "#c6a0f6",  # mauve
+    "base0F": "#f0c6c6",  # flamingo
 }
 
 catppuccin_mocha = {
     "scheme": "catppuccin_mocha",
     "author": "https://github.com/catppuccin/catppuccin",
-    "base00": "#1e1e2e", # base
-    "base01": "#181825", # mantle
-    "base02": "#313244", # surface0
-    "base03": "#45475a", # surface1
-    "base04": "#585b70", # surface2
-    "base05": "#cdd6f4", # text
-    "base06": "#f5e0dc", # rosewater
-    "base07": "#b4befe", # lavender
-    "base08": "#f38ba8", # red
-    "base09": "#fab387", # peach
-    "base0A": "#f9e2af", # yellow
-    "base0B": "#a6e3a1", # green
-    "base0C": "#94e2d5", # teal
-    "base0D": "#89b4fa", # blue
-    "base0E": "#cba6f7", # mauve
-    "base0F": "#f2cdcd", # flamingo
+    "base00": "#1e1e2e",  # base
+    "base01": "#181825",  # mantle
+    "base02": "#313244",  # surface0
+    "base03": "#45475a",  # surface1
+    "base04": "#585b70",  # surface2
+    "base05": "#cdd6f4",  # text
+    "base06": "#f5e0dc",  # rosewater
+    "base07": "#b4befe",  # lavender
+    "base08": "#f38ba8",  # red
+    "base09": "#fab387",  # peach
+    "base0A": "#f9e2af",  # yellow
+    "base0B": "#a6e3a1",  # green
+    "base0C": "#94e2d5",  # teal
+    "base0D": "#89b4fa",  # blue
+    "base0E": "#cba6f7",  # mauve
+    "base0F": "#f2cdcd",  # flamingo
 }
 
 dracula = {
@@ -335,19 +335,19 @@ dracula = {
     "base06": "#f1f2f8",
     "base07": "#f7f7fb",
     "base08": "#c197fd",
-    "base09": "#FFB86C",
+    "base09": "#ffb86c",
     "base0A": "#62d6e8",
-    "base0B": "#F1FA8C",
-    "base0C": "#8BE9FD",
+    "base0B": "#f1fa8c",
+    "base0C": "#8be9fd",
     "base0D": "#50fa7b",
     "base0E": "#ff86d3",
-    "base0F": "#F8F8F2",
+    "base0F": "#f8f8f2",
 }
 
 decay = {
     "scheme": "decay",
     "author": "https://github.com/decaycs",
-    "base00": "#171B20",
+    "base00": "#171b20",
     "base01": "#21262e",
     "base02": "#242931",
     "base03": "#485263",
@@ -355,10 +355,10 @@ decay = {
     "base05": "#b6beca",
     "base06": "#dee1e6",
     "base07": "#dee1e6",
-    "base08": "#70A5EB",
+    "base08": "#70a5eb",
     "base09": "#e9a180",
     "base0A": "#f1cf8a",
-    "base0B": "#78DBA9",
+    "base0B": "#78dba9",
     "base0C": "#e26c7c",
     "base0D": "#86aaec",
     "base0E": "#c68aee",
@@ -438,15 +438,15 @@ falcon = {
     "base04": "#e4e4eb",
     "base05": "#eeeef5",
     "base06": "#f3f3fa",
-    "base07": "#F8F8FF",
-    "base08": "#BFDAFF",
-    "base09": "#B4B4B9",
-    "base0A": "#FFC552",
-    "base0B": "#C8D0E3",
-    "base0C": "#B4B4B9",
-    "base0D": "#FFC552",
-    "base0E": "#8BCCBF",
-    "base0F": "#DFDFE5",
+    "base07": "#f8f8ff",
+    "base08": "#bfdaff",
+    "base09": "#b4b4b9",
+    "base0A": "#ffc552",
+    "base0B": "#c8d0e3",
+    "base0C": "#b4b4b9",
+    "base0D": "#ffc552",
+    "base0E": "#8bccbf",
+    "base0F": "#dfdfe5",
 }
 
 gruvbox_dark = {
@@ -473,7 +473,7 @@ gruvbox_dark = {
 gruvbox_light = {
     "scheme": "gruvbox_light",
     "author": "https://github.com/morhetz/gruvbox",
-    "base00": "#F2E5BC",
+    "base00": "#f2e5bc",
     "base01": "#e3d6ad",
     "base02": "#e5d8af",
     "base03": "#d8cba2",
@@ -501,7 +501,7 @@ kanagawa = {
     "base04": "#4c4c55",
     "base05": "#c8c3a6",
     "base06": "#d2cdb0",
-    "base07": "#DCD7BA",
+    "base07": "#dcd7ba",
     "base08": "#d8616b",
     "base09": "#ffa066",
     "base0A": "#dca561",
@@ -515,22 +515,22 @@ kanagawa = {
 melange = {
     "scheme": "melange",
     "author": "https://github.com/savq/melange",
-    "base00": "#2A2520",
+    "base00": "#2a2520",
     "base01": "#39342f",
     "base02": "#433e39",
     "base03": "#4d4843",
     "base04": "#57524d",
-    "base05": "#ECE1D7",
+    "base05": "#ece1d7",
     "base06": "#e3d8ce",
     "base07": "#d8cdc3",
-    "base08": "#ECE1D7",
-    "base09": "#86A3A3",
-    "base0A": "#99D59D",
-    "base0B": "#9AACCE",
-    "base0C": "#EBC06D",
-    "base0D": "#EBC06D",
-    "base0E": "#E49B5D",
-    "base0F": "#8E733F",
+    "base08": "#ece1d7",
+    "base09": "#86a3a3",
+    "base0A": "#99d59d",
+    "base0B": "#9aacce",
+    "base0C": "#ebc06d",
+    "base0D": "#ebc06d",
+    "base0E": "#e49b5d",
+    "base0F": "#8e733f",
 }
 
 monokai = {
@@ -566,12 +566,12 @@ monochrome = {
     "base06": "#c7cdd8",
     "base07": "#ced4df",
     "base08": "#eee8d5",
-    "base09": "#B8B7B1",
+    "base09": "#b8b7b1",
     "base0A": "#859ba2",
     "base0B": "#7b9198",
-    "base0C": "#DFDFDA",
+    "base0C": "#dfdfda",
     "base0D": "#ced4df",
-    "base0E": "#DAD4C3",
+    "base0E": "#dad4c3",
     "base0F": "#ced4df",
 }
 
@@ -599,22 +599,22 @@ mountain = {
 nord = {
     "scheme": "nord",
     "author": "https://www.nordtheme.com",
-    "base00": "#2E3440",
-    "base01": "#3B4252",
-    "base02": "#434C5E",
-    "base03": "#4C566A",
-    "base04": "#D8DEE9",
-    "base05": "#E5E9F0",
-    "base06": "#ECEFF4",
-    "base07": "#8FBCBB",
-    "base08": "#88C0D0",
-    "base09": "#81A1C1",
-    "base0A": "#5E81AC",
-    "base0B": "#BF616A",
-    "base0C": "#D08770",
-    "base0D": "#EBCB8B",
-    "base0E": "#A3BE8C",
-    "base0F": "#B48EAD",
+    "base00": "#2e3440",
+    "base01": "#3b4252",
+    "base02": "#434c5e",
+    "base03": "#4c566a",
+    "base04": "#d8dee9",
+    "base05": "#e5e9f0",
+    "base06": "#eceff4",
+    "base07": "#8fbcbb",
+    "base08": "#88c0d0",
+    "base09": "#81a1c1",
+    "base0A": "#5e81ac",
+    "base0B": "#bf616a",
+    "base0C": "#d08770",
+    "base0D": "#ebcb8b",
+    "base0E": "#a3be8c",
+    "base0F": "#b48ead",
 }
 
 onedark = {
@@ -689,9 +689,8 @@ rosepine_moon = {
     "base03": "#6e6a86",
     "base04": "#908caa",
     "base05": "#e0def4",
-    "base06": "#e0def4",
-    "base07": "#56526e",
-    "base08": "#ecebf0",
+    "base06": "#56526e",
+    "base07": "#ecebf0",
     "base08": "#eb6f92",
     "base09": "#f6c177",
     "base0A": "#ea9a97",
@@ -727,21 +726,21 @@ rxyhn = {
     "scheme": "rxyhn",
     "author": "https://github.com/rxyhn/yoru",
     "base00": "#061115",
-    "base01": "#0C171B",
-    "base02": "#101B1F",
+    "base01": "#0c171b",
+    "base02": "#101b1f",
     "base03": "#192428",
-    "base04": "#212C30",
-    "base05": "#D9D7D6",
-    "base06": "#E3E1E0",
-    "base07": "#EDEBEA",
+    "base04": "#212c30",
+    "base05": "#d9d7d6",
+    "base06": "#e3e1e0",
+    "base07": "#edebea",
     "base08": "#f26e74",
     "base09": "#ecd28b",
-    "base0A": "#E9967E",
+    "base0A": "#e9967e",
     "base0B": "#82c29c",
-    "base0C": "#6791C9",
-    "base0D": "#79AAEB",
-    "base0E": "#C488EC",
-    "base0F": "#F16269",
+    "base0C": "#6791c9",
+    "base0D": "#79aaeb",
+    "base0E": "#c488ec",
+    "base0F": "#f16269",
 }
 
 solarized = {
@@ -768,21 +767,21 @@ solarized = {
 sweetpastel = {
     "scheme": "sweetpastel",
     "author": "https://github.com/SweetPastel",
-    "base00": "#1B1F23",
+    "base00": "#1b1f23",
     "base01": "#25292d",
     "base02": "#2f3337",
     "base03": "#393d41",
     "base04": "#43474b",
-    "base05": "#FDE5E6",
-    "base06": "#DEE2E6",
-    "base07": "#F8F9FA",
+    "base05": "#fde5e6",
+    "base06": "#dee2e6",
+    "base07": "#f8f9fa",
     "base08": "#e5a3a1",
-    "base09": "#F1C192",
-    "base0A": "#ECE3B1",
-    "base0B": "#B4E3AD",
-    "base0C": "#F8B3CC",
-    "base0D": "#A3CBE7",
-    "base0E": "#CEACE8",
+    "base09": "#f1c192",
+    "base0A": "#ece3b1",
+    "base0B": "#b4e3ad",
+    "base0C": "#f8b3cc",
+    "base0D": "#a3cbe7",
+    "base0E": "#ceace8",
     "base0F": "#e5a3a1",
 }
 
@@ -796,7 +795,7 @@ tokyodark = {
     "base04": "#30313c",
     "base05": "#abb2bf",
     "base06": "#b2b9c6",
-    "base07": "#A0A8CD",
+    "base07": "#a0a8cd",
     "base08": "#ee6d85",
     "base09": "#7199ee",
     "base0A": "#7199ee",
@@ -843,9 +842,8 @@ yoru = {
     "base09": "#ecd28b",
     "base0A": "#e79881",
     "base0B": "#82c29c",
-    "base0C": "#6791C9",
+    "base0C": "#6791c9",
     "base0D": "#709ad2",
     "base0E": "#c58cec",
     "base0F": "#e8646a",
 }
-
