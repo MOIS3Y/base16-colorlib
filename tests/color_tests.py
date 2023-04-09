@@ -87,47 +87,49 @@ class TestBase16ColorLibVersion(unittest.TestCase):
 
 
 class TestСlassColorExternalColorScheme(unittest.TestCase):
-    test_cls_color = Color()
-    test_hex_colors = {
-        "scheme": "onedark",
-        "author": "https://github.com/one-dark",
-        "base00": "#1e222a",
-        "base01": "#353b45",
-        "base02": "#3e4451",
-        "base03": "#545862",
-        "base04": "#565c64",
-        "base05": "#abb2bf",
-        "base06": "#b6bdca",
-        "base07": "#c8ccd4",
-        "base08": "#e06c75",
-        "base09": "#d19a66",
-        "base0A": "#e5c07b",
-        "base0B": "#98c379",
-        "base0C": "#56b6c2",
-        "base0D": "#61afef",
-        "base0E": "#c678dd",
-        "base0F": "#be5046",
-    }
-    test_rgb_colors = {
-        "scheme": "onedark",
-        "author": "https://github.com/one-dark",
-        "base00": (30, 34, 42),
-        "base01": (53, 59, 69),
-        "base02": (62, 68, 81),
-        "base03": (84, 88, 98),
-        "base04": (86, 92, 100),
-        "base05": (171, 178, 191),
-        "base06": (182, 189, 202),
-        "base07": (200, 204, 212),
-        "base08": (224, 108, 117),
-        "base09": (209, 154, 102),
-        "base0A": (229, 192, 123),
-        "base0B": (152, 195, 121),
-        "base0C": (86, 182, 194),
-        "base0D": (97, 175, 239),
-        "base0E": (198, 120, 221),
-        "base0F": (190, 80, 70),
-    }
+
+    def setUp(self):
+        self.test_cls_color = Color()
+        self.test_hex_colors = {
+            "scheme": "onedark",
+            "author": "https://github.com/one-dark",
+            "base00": "#1e222a",
+            "base01": "#353b45",
+            "base02": "#3e4451",
+            "base03": "#545862",
+            "base04": "#565c64",
+            "base05": "#abb2bf",
+            "base06": "#b6bdca",
+            "base07": "#c8ccd4",
+            "base08": "#e06c75",
+            "base09": "#d19a66",
+            "base0A": "#e5c07b",
+            "base0B": "#98c379",
+            "base0C": "#56b6c2",
+            "base0D": "#61afef",
+            "base0E": "#c678dd",
+            "base0F": "#be5046",
+        }
+        self.test_rgb_colors = {
+            "scheme": "onedark",
+            "author": "https://github.com/one-dark",
+            "base00": (30, 34, 42),
+            "base01": (53, 59, 69),
+            "base02": (62, 68, 81),
+            "base03": (84, 88, 98),
+            "base04": (86, 92, 100),
+            "base05": (171, 178, 191),
+            "base06": (182, 189, 202),
+            "base07": (200, 204, 212),
+            "base08": (224, 108, 117),
+            "base09": (209, 154, 102),
+            "base0A": (229, 192, 123),
+            "base0B": (152, 195, 121),
+            "base0C": (86, 182, 194),
+            "base0D": (97, 175, 239),
+            "base0E": (198, 120, 221),
+            "base0F": (190, 80, 70),
+        }
 
     @staticmethod
     def _remove_meta_fields(**color_scheme):
@@ -155,8 +157,10 @@ class TestСlassColorExternalColorScheme(unittest.TestCase):
 
 
 class TestСlassColorInternalColorSchemes(unittest.TestCase):
-    color_schemes = color_schemes
-    test_cls_color = Color()
+
+    def setUp(self):
+        self.color_schemes = color_schemes
+        self.test_cls_color = Color()
 
     @staticmethod
     def _remove_meta_fields(**color_scheme):
