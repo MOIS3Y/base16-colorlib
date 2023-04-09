@@ -130,6 +130,26 @@ class TestСlassColorExternalColorScheme(unittest.TestCase):
             "base0E": (198, 120, 221),
             "base0F": (190, 80, 70),
         }
+        self.test_hsl_colors = {
+            "scheme": "onedark",
+            "author": "https://github.com/one-dark",
+            "base00": (0.6111111111111112, 0.16666666666666666, 0.1411764705882353),  # noqa: E501
+            "base01": (0.6041666666666666, 0.1311475409836065, 0.2392156862745098),  # noqa: E501
+            "base02": (0.6140350877192983, 0.13286713286713284, 0.2803921568627451),  # noqa: E501
+            "base03": (0.6190476190476191, 0.07692307692307696, 0.3568627450980392),  # noqa: E501
+            "base04": (0.5952380952380953, 0.07526881720430102, 0.3647058823529412),  # noqa: E501
+            "base05": (0.6083333333333334, 0.1351351351351352, 0.7098039215686274),  # noqa: E501
+            "base06": (0.6083333333333333, 0.1587301587301586, 0.7529411764705882),  # noqa: E501
+            "base07": (0.611111111111111, 0.12244897959183688, 0.807843137254902),  # noqa: E501
+            "base08": (0.9870689655172413, 0.651685393258427, 0.6509803921568628),  # noqa: E501
+            "base09": (0.08099688473520249, 0.5376884422110553, 0.6098039215686275),  # noqa: E501
+            "base0A": (0.10849056603773584, 0.6708860759493671, 0.6901960784313725),  # noqa: E501
+            "base0B": (0.26351351351351354, 0.38144329896907214, 0.6196078431372549),  # noqa: E501
+            "base0C": (0.5185185185185185, 0.46956521739130436, 0.5490196078431373),  # noqa: E501
+            "base0D": (0.5751173708920189, 0.8160919540229885, 0.6588235294117647),  # noqa: E501
+            "base0E": (0.7953795379537953, 0.5976331360946747, 0.6686274509803922),  # noqa: E501
+            "base0F": (0.013888888888888876, 0.48, 0.5098039215686274),
+        }
 
     @staticmethod
     def _remove_meta_fields(**color_scheme):
@@ -154,6 +174,36 @@ class TestСlassColorExternalColorScheme(unittest.TestCase):
             hex_color = self.test_cls_color.rgb_to_hex(*benchmark_rgb)
             self.assertEqual(hex_color, benchmark_hex)
             self.assertEqual(rgb_color, benchmark_rgb)
+
+    def test_rgb_to_hsl_and_hsl_to_rgb_correct_type(self):
+        test_rgb_colors = self._remove_meta_fields(**self.test_rgb_colors)
+        for key, value in test_rgb_colors.items():
+            hsl_color = self.test_cls_color.rgb_to_hsl(*value)
+            rgb_color = self.test_cls_color.hsl_to_rgb(*hsl_color)
+            self.assertIsInstance(hsl_color, tuple)
+            self.assertIsInstance(rgb_color, tuple)
+
+    def test_rgb_to_hsl_and_hsl_to_rgb_correct_value(self):
+        test_rgb_colors = self._remove_meta_fields(**self.test_rgb_colors)
+        for key, value in test_rgb_colors.items():
+            benchmark_rgb = value
+            benchmark_hsl = self.test_hsl_colors[key]  
+            hsl_color = self.test_cls_color.rgb_to_hsl(*benchmark_rgb)
+            rgb_color = self.test_cls_color.hsl_to_rgb(*hsl_color)
+            print(rgb_color, hsl_color)
+            self.assertEqual(hsl_color, benchmark_hsl)
+            self.assertEqual(rgb_color, benchmark_rgb)
+
+    def test_hex_to_hsl_and_hsl_to_hex_correct_value(self):
+        test_hex_colors = self._remove_meta_fields(**self.test_hex_colors)
+        for key, value in test_hex_colors.items():
+            benchmark_hex = value
+            benchmark_hsl = self.test_hsl_colors[key]
+            hsl_color = self.test_cls_color.hex_to_hsl(benchmark_hex)
+            hex_color = self.test_cls_color.hsl_to_hex(*hsl_color)
+            print(hex_color, benchmark_hex)
+            self.assertEqual(hex_color, benchmark_hex)
+            self.assertEqual(hsl_color, benchmark_hsl)
 
 
 class TestСlassColorInternalColorSchemes(unittest.TestCase):
