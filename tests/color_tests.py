@@ -187,12 +187,19 @@ class TestСlassColorExternalColorScheme(unittest.TestCase):
         test_rgb_colors = self._remove_meta_fields(**self.test_rgb_colors)
         for key, value in test_rgb_colors.items():
             benchmark_rgb = value
-            benchmark_hsl = self.test_hsl_colors[key]  
+            benchmark_hsl = self.test_hsl_colors[key]
             hsl_color = self.test_cls_color.rgb_to_hsl(*benchmark_rgb)
             rgb_color = self.test_cls_color.hsl_to_rgb(*hsl_color)
-            print(rgb_color, hsl_color)
             self.assertEqual(hsl_color, benchmark_hsl)
             self.assertEqual(rgb_color, benchmark_rgb)
+
+    def test_hex_to_hsl_and_hsl_to_hex_returns_correct_type(self):
+        test_hex_colors = self._remove_meta_fields(**self.test_hex_colors)
+        for key, value in test_hex_colors.items():
+            hsl_color = self.test_cls_color.hex_to_hsl(value)
+            hex_color = self.test_cls_color.hsl_to_hex(*hsl_color)
+            self.assertIsInstance(hsl_color, tuple)
+            self.assertIsInstance(hex_color, str)
 
     def test_hex_to_hsl_and_hsl_to_hex_correct_value(self):
         test_hex_colors = self._remove_meta_fields(**self.test_hex_colors)
@@ -201,7 +208,6 @@ class TestСlassColorExternalColorScheme(unittest.TestCase):
             benchmark_hsl = self.test_hsl_colors[key]
             hsl_color = self.test_cls_color.hex_to_hsl(benchmark_hex)
             hex_color = self.test_cls_color.hsl_to_hex(*hsl_color)
-            print(hex_color, benchmark_hex)
             self.assertEqual(hex_color, benchmark_hex)
             self.assertEqual(hsl_color, benchmark_hsl)
 
@@ -235,6 +241,45 @@ class TestСlassColorInternalColorSchemes(unittest.TestCase):
                 rgb_color = self.test_cls_color.hex_to_rgb(benchmark_hex)
                 hex_color = self.test_cls_color.rgb_to_hex(*rgb_color)
                 self.assertEqual(hex_color, benchmark_hex)
+
+    def test_rgb_to_hsl_and_hsl_to_rgb_correct_type(self):
+        for color_scheme in self.color_schemes:
+            color_scheme = self._remove_meta_fields(**color_scheme)
+            for key, value in color_scheme.items():
+                rgb_color = self.test_cls_color.hex_to_rgb(value)
+                hsl_color = self.test_cls_color.rgb_to_hsl(*rgb_color)
+                rgb_color = self.test_cls_color.hsl_to_rgb(*hsl_color)
+                self.assertIsInstance(hsl_color, tuple)
+                self.assertIsInstance(rgb_color, tuple)
+
+    # def test_rgb_to_hsl_and_hsl_to_rgb_correct_value(self):
+    #     for color_scheme in self.color_schemes:
+    #         color_scheme = self._remove_meta_fields(**color_scheme)
+    #         for key, value in color_scheme.items():
+    #             benchmark_rgb = self.test_cls_color.hex_to_rgb(value)
+    #             hsl_color = self.test_cls_color.rgb_to_hsl(*benchmark_rgb)
+    #             rgb_color = self.test_cls_color.hsl_to_rgb(*hsl_color)
+    #             print(benchmark_rgb, rgb_color)
+    #             self.assertEqual(rgb_color, benchmark_rgb)
+
+    # def test_hex_to_hsl_and_hsl_to_hex_returns_correct_type(self):
+    #     for color_scheme in self.color_schemes:
+    #         color_scheme = self._remove_meta_fields(**color_scheme)
+    #         for key, value in color_scheme.items():
+    #             hsl_color = self.test_cls_color.hex_to_hsl(value)
+    #             hex_color = self.test_cls_color.hsl_to_hex(*hsl_color)
+    #             self.assertIsInstance(hsl_color, tuple)
+    #             self.assertIsInstance(hex_color, str)
+
+    # def test_hex_to_hsl_and_hsl_to_hex_correct_value(self):
+    #     for color_scheme in self.color_schemes:
+    #         color_scheme = self._remove_meta_fields(**color_scheme)
+    #         for key, value in color_scheme.items():
+    #             benchmark_hex = value
+    #             hsl_color = self.test_cls_color.hex_to_hsl(benchmark_hex)
+    #             hex_color = self.test_cls_color.hsl_to_hex(*hsl_color)
+    #             print(benchmark_hex, hex_color)
+    #             self.assertEqual(hex_color, benchmark_hex)
 
 
 if __name__ == "__main__":
