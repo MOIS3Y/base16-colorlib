@@ -25,6 +25,7 @@ liability, whether in an action of contract, tort or otherwise, arising from,
 out of or in connection with the software or the use or other dealings in the
 software.
 """
+import colorsys
 
 
 # █▀▄▀█ █▀▀ ▀█▀ ▄▀█ ▀
@@ -87,10 +88,6 @@ class Color(object):
 
         lightness_color = Color.lightness(shift_color, 20)  =>  #e6eaff
     """
-    ONE_THIRD = 1.0/3.0
-    ONE_SIXTH = 1.0/6.0
-    TWO_THIRD = 2.0/3.0
-
     def __init__(self, **color_scheme) -> dict:
         """Stores the color scheme as an attribute of the scheme class
         preferably in base16 simple example:
@@ -174,32 +171,7 @@ class Color(object):
         """
         # Normalize R, G, B values:
         r, g, b = [item / 255.0 for item in rgb]
-        # Const - max, min, range color:
-        max_color = max(r, g, b)
-        min_color = min(r, g, b)
-        sum_color = (max_color + min_color)
-        range_color = (max_color - min_color)
-        # L - lightness (intensity):
-        l = sum_color / 2.0  # noqa: E741
-        # S - Saturation:
-        if min_color == max_color:
-            return 0.0, 0.0, l
-        if l <= 0.5:
-            s = range_color / sum_color
-        else:
-            s = range_color / (2.0 - sum_color)
-        # Modify R G B need for Hue:
-        rc = (max_color - r) / range_color
-        gc = (max_color - g) / range_color
-        bc = (max_color - b) / range_color
-        # H - Hue:
-        if r == max_color:
-            h = bc - gc
-        elif g == max_color:
-            h = 2.0 + rc - bc
-        else:
-            h = 4.0 + gc - rc
-        h = (h / 6.0) % 1.0
+        h, l, s = [item for item in colorsys.rgb_to_hls(r, g, b)]  # noqa: E741
         return (h, s, l)
 
     def hsl_to_rgb(self, *hsl) -> tuple:
@@ -210,28 +182,8 @@ class Color(object):
             _tuple_: (180, 190, 254)
         """
         h, s, l = [channel for channel in hsl]   # noqa: E741
-        if s == 0.0:
-            return l, l, l
-        if l <= 0.5:
-            m2 = l * (1.0 + s)
-        else:
-            m2 = l + s - (l * s)
-        m1 = 2.0 * l - m2
-        return (
-            round(self._v(m1, m2, h + self.ONE_THIRD)*255),  # R
-            round(self._v(m1, m2, h)*255),                   # G
-            round(self._v(m1, m2, h - self.ONE_THIRD)*255)   # B
-        )
-
-    def _v(self, m1, m2, hue):
-        hue = hue % 1.0
-        if hue < self.ONE_SIXTH:
-            return m1 + (m2 - m1) * hue * 6.0
-        if hue < 0.5:
-            return m2
-        if hue < self.TWO_THIRD:
-            return m1 + (m2 - m1) * (self.TWO_THIRD - hue) * 6.0
-        return m1
+        r, g, b = [round(item * 255) for item in colorsys.hls_to_rgb(h, l, s)]
+        return (r, g, b)
 
     @staticmethod
     def _check_range(channel: float) -> int | float:
