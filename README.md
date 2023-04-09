@@ -368,15 +368,15 @@
     "base05": "#e9e9f4",
     "base06": "#f1f2f8",
     "base07": "#f7f7fb",
-    "base08": "#c197fd",
-    "base09": "#FFB86C",
-    "base0A": "#62d6e8",
-    "base0B": "#F1FA8C",
-    "base0C": "#8BE9FD",
-    "base0D": "#50fa7b",
-    "base0E": "#ff86d3",
-    "base0F": "#F8F8F2",
-  }
+    "base08": "#ea51b2",
+    "base09": "#b45bcf",
+    "base0A": "#00f769",
+    "base0B": "#ebff87",
+    "base0C": "#a1efe4",
+    "base0D": "#62d6e8",
+    "base0E": "#b45bcf",
+    "base0F": "#00f769",
+}
   ```
   </details>
   <br/>
