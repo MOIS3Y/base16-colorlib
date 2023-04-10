@@ -1075,7 +1075,7 @@ and has public methods for changing colors according to the HSL color model:
 
 <br/>
 
-![image info](./assets/hsl_example.png)
+![image info](https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/hsl_example.png)
 
 This class is intended to be stored in an attribute `Color.scheme` color scheme in base16 format.\
 And its subsequent use to set the color for various elements.\
@@ -1180,7 +1180,7 @@ be changed this channel (-360, 360).
     }
   ````
   Result:\
-  ![image info](./assets/qtile_example.png)
+  ![image info](https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/qtile_example.png)
 
 
 # License:
