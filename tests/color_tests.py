@@ -1,6 +1,7 @@
 import unittest
 
-from base16_colorlib.color import __version__ as color_version
+from base16_colorlib.version import __version__ as package_version
+from base16_colorlib.utils import __version__ as color_version
 from base16_colorlib.color_scheme import __version__ as color_scheme_version
 from base16_colorlib import (
     Color,
@@ -82,8 +83,9 @@ color_schemes = [
 
 class TestBase16ColorLibVersion(unittest.TestCase):
     def test_base16_colorlib_version(self):
-        self.assertEqual(color_version, '0.1.0')
-        self.assertEqual(color_scheme_version, '0.1.0')
+        self.assertEqual(package_version, '0.2.0')
+        self.assertEqual(color_version, '0.2.0')
+        self.assertEqual(color_scheme_version, '0.2.0')
 
 
 class TestСlassColorExternalColorScheme(unittest.TestCase):

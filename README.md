@@ -2,10 +2,10 @@
 
 ## COLOR SCHEME:
 
-### Package contains several ready-made color schemes in `base16` format:
+Package contains several ready-made color schemes in `base16` format:
 <br/>
 
-![image info](./assets/onedark_example.png)
+![image info](https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/onedark_example.png)
 
 
 <details>
@@ -42,7 +42,7 @@
   <br/>
   <details><summary>aquarium:</summary>
   <br/>
-  <img src="./assets/aquarium_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/aquarium_example.png">
   <br/>
 
   ```
@@ -70,7 +70,7 @@
   </details>
   <details><summary>ashes:</summary>
   <br/>
-  <img src="./assets/ashes_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/ashes_example.png">
   <br/>
 
   ```
@@ -98,7 +98,7 @@
   </details>
   <details><summary>ayu_dark:</summary>
   <br/>
-  <img src="./assets/ayu_dark_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/ayu_dark_example.png">
   <br/>
 
   ```
@@ -126,7 +126,7 @@
   </details>
   <details><summary>ayu_light:</summary>
   <br/>
-  <img src="./assets/ayu_light_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/ayu_light_example.png">
   <br/>
 
   ```
@@ -155,7 +155,7 @@
   <br/>
   <details><summary>bearded_arc:</summary>
   <br/>
-  <img src="./assets/bearded_arc_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/bearded_arc_example.png">
   <br/>
 
   ```
@@ -183,7 +183,7 @@
   </details>
   <details><summary>blossom_light:</summary>
   <br/>
-  <img src="./assets/blossom_light_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/blossom_light_example.png">
   <br/>
 
   ```
@@ -212,7 +212,7 @@
   <br/>
   <details><summary>catppuccin_latte:</summary>
   <br/>
-  <img src="./assets/catppuccin_latte_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/catppuccin_latte_example.png">
   <br/>
 
   ```
@@ -240,7 +240,7 @@
   </details>
   <details><summary>catppuccin_frappe:</summary>
   <br/>
-  <img src="./assets/catppuccin_frappe_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/catppuccin_frappe_example.png">
   <br/>
 
   ```
@@ -268,7 +268,7 @@
   </details>
   <details><summary>catppuccin_macchiato:</summary>
   <br/>
-  <img src="./assets/catppuccin_macchiato_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/catppuccin_macchiato_example.png">
   <br/>
 
   ```
@@ -296,7 +296,7 @@
   </details>
   <details><summary>catppuccin_mocha:</summary>
   <br/>
-  <img src="./assets/catppuccin_mocha_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/catppuccin_mocha_example.png">
   <br/>
 
   ```
@@ -325,7 +325,7 @@
   <br/>
   <details><summary>decay:</summary>
   <br/>
-  <img src="./assets/decay_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/decay_example.png">
   <br/>
 
   ```
@@ -353,7 +353,7 @@
   </details>
   <details><summary>dracula:</summary>
   <br/>
-  <img src="./assets/dracula_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/dracula_example.png">
   <br/>
 
   ```
@@ -382,7 +382,7 @@
   <br/>
   <details><summary>everblush:</summary>
   <br/>
-  <img src="./assets/everblush_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/everblush_example.png">
   <br/>
 
   ```
@@ -410,7 +410,7 @@
   </details>
   <details><summary>everforest_dark:</summary>
   <br/>
-  <img src="./assets/everforest_dark_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/everforest_dark_example.png">
   <br/>
 
   ```
@@ -437,7 +437,7 @@
   </details>
   <details><summary>everforest_light:</summary>
   <br/>
-  <img src="./assets/everforest_light_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/everforest_light_example.png">
   <br/>
 
   ```
@@ -466,7 +466,7 @@
   <br/>
   <details><summary>falcon:</summary>
   <br/>
-  <img src="./assets/falcon_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/falcon_example.png">
   <br/>
 
   ```
@@ -495,7 +495,7 @@
   <br/>
  <details><summary>gruvbox_dark:</summary>
   <br/>
-  <img src="./assets/gruvbox_dark_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/gruvbox_dark_example.png">
   <br/>
 
   ```
@@ -523,7 +523,7 @@
   </details>
   <details><summary>gruvbox_light:</summary>
   <br/>
-  <img src="./assets/gruvbox_light_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/gruvbox_light_example.png">
   <br/>
 
   ```
@@ -552,7 +552,7 @@
   <br/>
   <details><summary>kanagawa:</summary>
   <br/>
-  <img src="./assets/kanagawa_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/kanagawa_example.png">
   <br/>
 
   ```
@@ -581,7 +581,7 @@
   <br/>
   <details><summary>melange:</summary>
   <br/>
-  <img src="./assets/melange_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/melange_example.png">
   <br/>
 
   ```
@@ -609,7 +609,7 @@
   </details>
   <details><summary>monokai:</summary>
   <br/>
-  <img src="./assets/monokai_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/monokai_example.png">
   <br/>
 
   ```
@@ -637,7 +637,7 @@
   </details>
   <details><summary>monochrome:</summary>
   <br/>
-  <img src="./assets/monochrome_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/monochrome_example.png">
   <br/>
 
   ```
@@ -665,7 +665,7 @@
   </details>
   <details><summary>mountain:</summary>
   <br/>
-  <img src="./assets/mountain_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/mountain_example.png">
   <br/>
 
   ```
@@ -694,7 +694,7 @@
    <br/>
   <details><summary>nord:</summary>
   <br/>
-  <img src="./assets/nord_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/nord_example.png">
   <br/>
 
   ```
@@ -723,7 +723,7 @@
    <br/>
   <details><summary>onedark:</summary>
   <br/>
-  <img src="./assets/onedark_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/onedark_example.png">
   <br/>
 
   ```
@@ -751,7 +751,7 @@
   </details>
   <details><summary>onelight:</summary>
   <br/>
-  <img src="./assets/onelight_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/onelight_example.png">
   <br/>
 
   ```
@@ -780,7 +780,7 @@
   <br/>
   <details><summary>rosepine:</summary>
   <br/>
-  <img src="./assets/rosepine_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/rosepine_example.png">
   <br/>
 
   ```
@@ -808,7 +808,7 @@
   </details>
   <details><summary>rosepine_moon:</summary>
   <br/>
-  <img src="./assets/rosepine_moon_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/rosepine_moon_example.png">
   <br/>
 
   ```
@@ -837,7 +837,7 @@
   </details>
   <details><summary>rosepine_dawn:</summary>
   <br/>
-  <img src="./assets/rosepine_dawn_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/rosepine_dawn_example.png">
   <br/>
 
   ```
@@ -865,7 +865,7 @@
   </details>
   <details><summary>rxyhn:</summary>
   <br/>
-  <img src="./assets/rxyhn_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/rxyhn_example.png">
   <br/>
 
   ```
@@ -894,7 +894,7 @@
   <br/>
   <details><summary>solarized:</summary>
   <br/>
-  <img src="./assets/solarized_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/solarized_example.png">
   <br/>
 
   ```
@@ -922,7 +922,7 @@
   </details>
   <details><summary>sweetpastel:</summary>
   <br/>
-  <img src="./assets/sweetpastel_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/sweetpastel_example.png">
   <br/>
 
   ```
@@ -951,7 +951,7 @@
   <br/>
   <details><summary>tokyodark:</summary>
   <br/>
-  <img src="./assets/tokyodark_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/tokyodark_example.png">
   <br/>
 
   ```
@@ -979,7 +979,7 @@
   </details>
   <details><summary>tokyonight:</summary>
   <br/>
-  <img src="./assets/tokyonight_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/tokyonight_example.png">
   <br/>
 
   ```
@@ -1008,7 +1008,7 @@
   <br/>
   <details><summary>yoru:</summary>
   <br/>
-  <img src="./assets/yoru_example.png">
+  <img src="https://raw.githubusercontent.com/MOIS3Y/base16-colorlib/assets/yoru_example.png">
   <br/>
 
   ```
@@ -1185,4 +1185,4 @@ be changed this channel (-360, 360).
 
 # License:
 
-### GPLv3
+GPLv3
